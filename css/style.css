@@ -84,11 +84,12 @@ header #navbar ul li a:hover{
 
 header h1 {
     font-size: 6rem;
+    animation: enter-animation-title 2s forwards;
 }
 
 header p {
     font-size: 1.75rem;
-    margin-top: 0.5rem;
+    animation: enter-animation-title 2s forwards;
 }
 
 header #content {
@@ -109,6 +110,7 @@ header #content a {
     padding: 0.5rem 0.75rem;
     margin-top: 3rem;
     font-size: 1.25rem;
+    animation: enter-animation-title 2s forwards;
 }
 
 header #content a:hover {
@@ -119,6 +121,16 @@ header #content a:hover {
     padding: 0.5rem 0.75rem;
     margin-top: 3rem;
     font-size: 1.25rem;
+}
+
+@keyframes enter-animation-title {
+    from {
+        margin-right: 100px;
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1.0;
+    }
 }
 
 /* Apps section */

@@ -211,6 +211,7 @@ header #content a:hover {
 }
 
 #contact-section textarea {
+    font-family: 'Roboto', sans-serif;
     height: 200px;
 }
 

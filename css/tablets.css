@@ -1,0 +1,8 @@
+#apps {
+    padding: 2rem 5rem;
+    display: block;
+}
+
+.app:nth-child(2) {
+    margin: 3rem 0;
+}

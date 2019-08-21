@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="We focus on delivering high quality and usable mobile apps for everyone">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="./css/tablets.css">
+    <link rel="stylesheet" media="screen and (max-width: 560px)" href="./css/mobile.css">
+    <link rel="stylesheet" media="screen and (max-width: 320px)" href="./css/mobile_small.css">
+    <title>CloudDroid | Mobile apps</title>
+</head>
+
+<body>
+
+    <header>
+        <nav id="navbar">
+            <div class="container">
+                <ul>
+                    <li class="btn"><a href="#apps-section" class="btn">Our Apps</a></li>
+                    <li class="btn"><a href="#contact-section" class="btn">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="content">
+            <div class="container">
+                <h1><span class="text-primary">Cloud</span>Droid</h1>
+                <p>Making meaningful apps for everyone</p>
+                <a href="#apps-section" class="btn">See our apps</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="apps-section" class="bg-dark">
+        <h2 class="text-primary">Our mobile apps</h2>
+        <div id="apps">
+            <div class="app">
+                <img class="app-icon" src="images/days_counter_icon.png" alt="Days Counter">
+                <div class="app-content">
+                    <div class="app-description">
+                        <h3>Days Counter</h3>
+                        <p>Trendy and lightweight app to track the most important events from your life. View days
+                            elapsed
+                            after
+                            an event or the remaining days. With this app you will never forget about anniversaries,
+                            birthdays
+                            or any memorable events.</p>
+                    </div>
+                    <a href='https://play.google.com/store/apps/details?id=com.arkadiusz.dayscounter&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                        target="_blank"><img alt='Get it on Google Play'
+                            src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+                </div>
+            </div>
+            <div class="app">
+                <img class="app-icon" src="images/usagesage_icon.png" alt="UsageSafe">
+                <div class="app-content">
+                    <div class="app-description">
+                        <h3>UsageSafe</h3>
+                        <p>Have you ever wondered how many times you unlock your phone throughout the day? How much time
+                            do
+                            you
+                            spend on specific apps? What is the average screen time
+                            per day, per hour? This app has answers to those
+                            and many other questions you may have.</p>
+                    </div>
+                    <a href='https://play.google.com/store/apps/details?id=com.clouddroid.usagesafe&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                        target="_blank"><img alt='Get it on Google Play'
+                            src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+                </div>
+            </div>
+            <div class="app">
+                <img class="app-icon" src="images/pets_care_icon.png" alt="Pets Care">
+                <div class="app-content">
+                    <div class="app-description">
+                        <h3>Pet's Care&Health</h3>
+                        <p>Pet's Care&Health app lets you take care of all of your pets in a simple and elegant way.
+                            Keep
+                            track
+                            of all measurement values, write notes, save medical records, add photos of your pupils,
+                            schedule
+                            reminders, find all vets and pet shops nearby- everything in one place!</p>
+                    </div>
+                    <a href='https://play.google.com/store/apps/details?id=com.clouddroid.petscarehealth&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'
+                        target="_blank"><img alt='Get it on Google Play'
+                            src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' /></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h2 class="text-primary">Contact us</h2>
+        <div id="form-wrap">
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="form-group">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter an email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label><br>
+                    <textarea name="message" id="message" cols="40" rows="3" placeholder="Type your message"></textarea>
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy 2019. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

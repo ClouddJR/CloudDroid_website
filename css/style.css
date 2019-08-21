@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* General */
+
+:root {
+    --color-text-light: #fff;
+    --color-text-dark: #333;
+    --color-accent: #63ace5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-text-dark);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-text-light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-text-light)
+}
+
+/* Utilities */
+
+.container {
+    margin: 0 auto;
+    max-width: 1100px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-primary {
+    color: var(--color-accent)
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100vh;
+}
+
+header:before {
+    content:'';
+    background: url(../images/clouds.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: -1;
+}
+
+header #navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(3, 3, 3, 0.15);
+}
+
+header #navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header #navbar ul li{
+    padding: 0.75rem;
+    margin: 0.25rem 0.25rem;
+    list-style-type: none;
+}
+
+header #navbar ul li a:hover{
+    color: var(--color-accent);
+}
+
+header h1 {
+    font-size: 6rem;
+}
+
+header p {
+    font-size: 1.75rem;
+    margin-top: 0.5rem;
+}
+
+header #content {
+    margin: -51px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+header #content a {
+    display: inline-block;
+    background: none;
+    border: 1px var(--color-text-light) solid;
+    color: var(--color-text-light);
+    padding: 0.5rem 0.75rem;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+header #content a:hover {
+    display: inline-block;
+    background: var(--color-accent);
+    border: 1px var(--color-accent) solid;
+    color: var(--color-text-light);
+    padding: 0.5rem 0.75rem;
+    margin-top: 3rem;
+    font-size: 1.25rem;
+}
+
+/* Apps section */
+
+#apps-section h2 {
+    padding-top: 25px;
+    padding-bottom: 15px;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#apps {
+    padding: 2rem;
+    display: flex;
+}
+
+#apps .app {
+    justify-content: space-between;
+    align-content: center;
+    text-align: left;
+    display: flex;
+    flex: 1;
+}
+
+#apps .app .app-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.app-content {
+    margin: 0 1rem;
+}
+
+.app-content .app-description p{
+    margin-top: 0.5rem;
+    line-height: 1.5rem;
+}
+
+.app-content .app-description a{
+    display: inline-block;
+    width: 150px;
+}
+
+.app-content a img{
+    margin-top: 15px;
+    width: 150px;
+}
+
+#apps .app .app-icon {
+    width: 80px;
+    height: 80px;
+}
+
+/* Contact section */
+
+#form-wrap {
+    margin: 0 auto;
+    max-width: 768px;
+}
+#contact-section {
+    padding: 0 2rem;
+    width: 100%;
+    padding-top: 5rem;
+}
+
+#contact-section h2 {
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#contact-section .form-group {
+    margin-bottom: 15px;
+}
+
+#contact-section .form-group label {
+    display: block;
+}
+
+#contact-section input, 
+#contact-section textarea {
+    color: #fff;
+    font-size: 1rem;
+    background-color: #444;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    resize: none;
+}
+
+#contact-section textarea {
+    height: 200px;
+}
+
+#contact-section input:focus, 
+#contact-section textarea:focus {
+    outline: none;
+}
+
+#contact-section input[type='submit'] {
+    display: inline-block;
+    width: unset;
+    background: none;
+    border: 1px var(--color-text-light) solid;
+    color: var(--color-text-light);
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+#contact-section input[type='submit']:hover {
+    display: inline-block;
+    background: var(--color-accent);
+    border: 1px var(--color-accent) solid;
+    color: var(--color-text-light);
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 5rem;
+    text-align: end;
+}
